@@ -7,9 +7,6 @@ Key features: layers, filters, HTML5, PHP, open source, Photoshop alternative.
 miniPaint operates directly in the browser. You can create images, paste from clipboard (ctrl+v) 
 or upload from computer (using menu or drag & drop). Nothing will be sent to any server. Everything stays in your browser. 
 
-## URL:
-**https://github.com/Hrishi-Raj/MiniPaint**
-
 ## Browser Support
 - Chrome
 - Firefox
