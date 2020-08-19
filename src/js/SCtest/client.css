@@ -1,0 +1,11 @@
+canvas{
+    max-width:1000;
+    max-height:1000;
+    border-style: solid;
+}
+#sc{
+    width:400px;
+    height: 300px;
+    border-style: solid;
+    
+}

@@ -1,0 +1,24 @@
+
+body{
+    background-color: rgb(51, 3, 95)
+}
+#main {
+    
+    text-align: center;
+    border: rgb(160, 30, 16) solid;
+    background-color: rgba(112, 3, 3, 0.849);
+    box-shadow: 0 4px 8px 0 rgba(244, 247, 246, 0.2);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+p{
+    
+}
+canvas{
+    background-color: rgba(252, 246, 246, 0.966);
+    border: solid blue;
+}
+img{
+    border: solid blue;
+}

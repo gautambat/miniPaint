@@ -1,0 +1,48 @@
+<!DOCTYPE html><html>
+<head>
+    <meta charset="UTF-8">
+  <script type="text/javascript" src="ToUrl.js">  </script>
+</head>
+<body onload="draw()" background ="lightgray" >
+      <div>
+        <button onclick="putImage()">Copy graphic using toDataURL</button>
+      </div>
+      <div>
+        <canvas id="MyCanvas" width="400" height="400" > </canvas>
+      <img id="MyPix">
+      </div>
+    <script>
+      
+
+      
+      function draw()
+      {
+      
+        var canvas = document.getElementById("MyCanvas");
+        if (canvas.getContext)
+          {
+          var ctx = canvas.getContext("2d");
+          ctx.fillStyle="white";
+          ctx.beginPath();
+          ctx.rect (5,5,300,250);
+          ctx.fill();
+          ctx.stroke();
+          ctx.arc(150,150,100,0,Math.PI, false);
+          ctx.stroke();
+          }
+      }
+      function putImage()
+      {
+        var canvas1 = document.getElementById("MyCanvas");
+        if (canvas1.getContext) {
+          var ctx = canvas1.getContext("2d");                // Get the context for the canvas.
+          var myImage = canvas1.toDataURL("image/png"); 
+          console.log(myImage);     // Get the data as an image.
+        }
+        var imageElement = document.getElementById("MyPix");  // Get the img object.
+        imageElement.src = myImage;                           // Set the src to data from the canvas.
+        
+      }
+    </script>
+  </body>
+</html>
